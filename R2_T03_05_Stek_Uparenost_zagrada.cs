@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-class R2_T03_05_Uparenost_zagrada
+class R2_T03_05_Stek_Uparenost_zagrada
 {
     static void Main()
     {
