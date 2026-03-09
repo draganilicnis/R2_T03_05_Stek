@@ -22,10 +22,16 @@ class R2_T03_05_Stek_Sazimanje_putanja
                 a.Push(x);
         }
 
-        string[] sRezultat = a.ToArray();
-        Array.Reverse(sRezultat);
+        string sRezultat = "";                      // Priprema stringa za izlaz punjenjem (konkatenacijom elemenata iz steka)
+        while (a.Count > 0) 
+            sRezultat = "/" + a.Pop() + sRezultat;  // Konkatenacija vrednosti elemenata iz steka
 
-        Console.Write("/");
-        Console.WriteLine(string.Join("/", sRezultat));
+        Console.WriteLine(sRezultat);               // IZLAZ
+
+        //string[] sRezultat = a.ToArray();
+        //Array.Reverse(sRezultat);
+
+        //Console.Write("/");
+        //Console.WriteLine(string.Join("/", sRezultat));
     }
 }
